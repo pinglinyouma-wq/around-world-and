@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0756b8">
+<title>A AROUND｜株式会社Around World And</title>
+<style>
+:root{--blue:#0756b8;--cyan:#0aa7df;--navy:#092b69;--yellow:#ffd522;--pale:#eff8ff;--ink:#10254a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;color:var(--ink);background:#fff}
+a{text-decoration:none;color:inherit}img{max-width:100%;display:block}
+header{position:sticky;top:0;z-index:99;background:#fff;border-bottom:1px solid #e5eef8}
+.nav{height:64px;padding:0 14px;display:flex;align-items:center;justify-content:space-between}
+.logo{width:132px;height:52px;object-fit:contain}
+.menu-btn{width:44px;height:44px;border:0;border-radius:14px;background:#edf7ff;color:var(--blue);font-size:24px}
+nav{display:none;position:absolute;top:64px;left:0;right:0;background:#fff;padding:8px 16px 18px;box-shadow:0 10px 25px #0a4b8a22}
+nav.open{display:block}nav a{display:block;padding:16px 4px;border-bottom:1px solid #edf2f7;font-weight:900}
+.hero{background:linear-gradient(160deg,#fff 0%,#eef9ff 100%);padding:24px 16px 30px}
+.eyebrow{font-size:11px;letter-spacing:.14em;font-weight:1000;color:var(--cyan)}
+h1{font-size:39px;line-height:1.12;margin:10px 0 16px;color:var(--navy);letter-spacing:-.05em}
+h1 span{border-bottom:8px solid var(--yellow)}
+.lead{font-size:14px;line-height:1.85;font-weight:750;margin:0 0 20px}
+.buttons{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:20px}
+.btn{min-height:48px;display:flex;align-items:center;justify-content:center;border-radius:14px;font-size:14px;font-weight:1000}
+.primary{background:var(--blue);color:#fff}.yellow{background:var(--yellow);color:var(--navy)}
+.hero-photo{height:275px;border-radius:22px;overflow:hidden;position:relative;box-shadow:0 12px 30px #0a5ca822}
+.hero-photo img{width:100%;height:100%;object-fit:cover}
+.badge{position:absolute;right:10px;top:12px;width:104px;height:104px;border-radius:50%;background:#fff;border:2px solid var(--cyan);display:grid;place-items:center;text-align:center;font-size:10px;font-weight:900;box-shadow:0 8px 20px #0a5ca822}
+.badge strong{font-size:16px;color:var(--blue)}
+section{padding:58px 16px}.pale{background:var(--pale)}
+.head{text-align:center;margin-bottom:25px}.head small{color:var(--cyan);font-size:11px;font-weight:1000;letter-spacing:.14em}.head h2{font-size:28px;margin:6px 0 8px;color:var(--navy)}.head p{font-size:13px;color:#60758e;line-height:1.7;margin:0}
+.cards{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.card{background:#fff;border-radius:18px;overflow:hidden;border:1px solid #dcebf8;box-shadow:0 8px 20px #0a5ca80d}
+.card-img{height:105px;overflow:hidden}.card-img img{height:100%;width:100%;object-fit:cover}
+.card-body{padding:13px}.card h3{font-size:14px;margin:0 0 6px}.card p{font-size:11px;line-height:1.65;color:#64788e;margin:0}
+.reasons{display:grid;gap:12px}.reason{background:#fff;border:1px solid #dfedf8;border-radius:18px;padding:18px;display:grid;grid-template-columns:48px 1fr;gap:13px;align-items:start}.num{width:48px;height:48px;border-radius:50%;background:var(--yellow);display:grid;place-items:center;font-weight:1000}.reason h3{font-size:16px;margin:2px 0 5px}.reason p{font-size:12px;line-height:1.7;color:#64788e;margin:0}
+.ba img{border-radius:18px;box-shadow:0 10px 25px #0a5ca81c}.ba h2{font-size:28px;color:var(--navy);line-height:1.3;margin:20px 0 10px}.checks{padding:0;margin:15px 0 20px;list-style:none}.checks li{font-size:13px;font-weight:800;margin:10px 0}.checks li:before{content:"✓";background:var(--yellow);border-radius:50%;display:inline-grid;place-items:center;width:22px;height:22px;margin-right:7px}
+.contact{background:linear-gradient(145deg,#0756b8,#0aa7df);color:#fff;padding-bottom:30px}.contact h2{font-size:28px;line-height:1.35;margin:7px 0 14px}.contact p{font-size:13px;line-height:1.8;font-weight:650}.contact-box{background:#fff;color:var(--ink);padding:18px;border-radius:18px;margin-top:18px}.contact-box h3{margin:0 0 13px;font-size:17px}.contact-btn{background:var(--blue);color:#fff;display:flex;align-items:center;justify-content:center;min-height:52px;border-radius:13px;font-weight:1000;margin-bottom:9px}.mail{background:#edf7ff;color:var(--blue)}
+footer{background:#06265c;color:#fff;padding:24px 16px;text-align:center}.footer-logo{width:125px;margin:0 auto 12px;filter:brightness(0) invert(1)}footer small{font-size:10px;opacity:.75}
+.reveal{opacity:0;transform:translateY(18px);transition:.55s}.reveal.show{opacity:1;transform:none}
+.top{position:fixed;right:14px;bottom:16px;width:45px;height:45px;border-radius:50%;border:0;background:var(--yellow);color:var(--navy);font-size:20px;font-weight:900;z-index:30;box-shadow:0 7px 18px #002c6b33}
+</style>
+</head>
+<body>
+<header>
+<div class="nav">
+<a href="#"><img class="logo" src="logo.png" alt="A AROUND"></a>
+<button class="menu-btn" aria-label="メニュー">☰</button>
+</div>
+<nav>
+<a href="#service">サービス</a><a href="#about">私たちについて</a><a href="#works">実績</a><a href="#contact">お問い合わせ</a>
+</nav>
+</header>
+
+<main>
+<section class="hero">
+<div class="reveal">
+<div class="eyebrow">CLEANING & MAINTENANCE</div>
+<h1><span>キレイ</span>がつくる、<br>気持ちいい毎日。</h1>
+<p class="lead">オフィス・店舗・施設・住まいまで。<br>清掃のことなら Around World And にお任せください。</p>
+<div class="buttons"><a class="btn primary" href="#service">サービスを見る</a><a class="btn yellow" href="#contact">お問い合わせ</a></div>
+</div>
+<div class="hero-photo reveal"><img src="hero-cleaning.jpg" alt="清掃スタッフ"><div class="badge">プロの技術で<br><strong>キレイを<br>まるっと</strong><br>サポート！</div></div>
+</section>
+
+<section id="service" class="pale">
+<div class="head reveal"><small>SERVICE</small><h2>私たちの清掃サービス</h2><p>あらゆる場所を、プロの技術でキレイに。</p></div>
+<div class="cards">
+<article class="card reveal"><div class="card-img"><img src="services.jpg" alt=""></div><div class="card-body"><h3>🏢 日常清掃</h3><p>オフィスや店舗の日常清掃を丁寧に。</p></div></article>
+<article class="card reveal"><div class="card-img"><img src="services.jpg" alt=""></div><div class="card-body"><h3>🧹 定期清掃</h3><p>定期メンテナンスでキレイをキープ。</p></div></article>
+<article class="card reveal"><div class="card-img"><img src="services.jpg" alt=""></div><div class="card-body"><h3>🏪 店舗・施設</h3><p>快適に過ごせる空間をつくります。</p></div></article>
+<article class="card reveal"><div class="card-img"><img src="services.jpg" alt=""></div><div class="card-body"><h3>✨ その他清掃</h3><p>幅広いご要望に柔軟に対応します。</p></div></article>
+</div>
+</section>
+
+<section id="about">
+<div class="head reveal"><small>WHY AROUND?</small><h2>選ばれる3つの理由</h2></div>
+<div class="reasons">
+<div class="reason reveal"><div class="num">01</div><div><h3>丁寧な作業</h3><p>見えないところまで、一つひとつ丁寧に。</p></div></div>
+<div class="reason reveal"><div class="num">02</div><div><h3>明るく親切な対応</h3><p>安心してお任せいただける対応を心がけます。</p></div></div>
+<div class="reason reveal"><div class="num">03</div><div><h3>柔軟なサービス</h3><p>ご要望に合わせた清掃プランをご提案します。</p></div></div>
+</div>
+</section>
+
+<section id="works" class="pale">
+<div class="head reveal"><small>BEFORE / AFTER</small><h2>キレイの違いを実感！</h2></div>
+<div class="ba">
+<div class="reveal"><img src="before-after.jpg" alt="清掃前と清掃後"></div>
+<div class="reveal"><h2>見た目だけじゃない。<br>気持ちよさまで変える。</h2><ul class="checks"><li>オフィス・店舗の床清掃</li><li>ガラス・窓まわり</li><li>エアコン・設備清掃</li></ul><a class="btn primary" href="#contact">実績について相談する</a></div>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<div class="reveal"><small style="font-weight:1000;letter-spacing:.14em">CONTACT</small><h2>お掃除のことなら、<br>お気軽にご相談ください！</h2><p>「定期清掃をお願いしたい」「店舗をキレイにしたい」など、どんなことでもお気軽にお問い合わせください。</p></div>
+<div class="contact-box reveal"><h3>無料お見積り・ご相談</h3><a class="contact-btn" href="tel:0359281235">☎ 03-5928-1235</a><a class="contact-btn mail" href="mailto:info@example.com">✉ メールでお問い合わせ</a><small>※電話番号・メールアドレスは実際の情報に差し替えてください。</small></div>
+</section>
+</main>
+<footer><img class="footer-logo" src="logo.png" alt="A AROUND"><small>© Around World And Co., Ltd.</small></footer>
+<button class="top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+const nav=document.querySelector('nav'),menu=document.querySelector('.menu-btn');
+menu.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(e=>io.observe(e));
+</script>
+</body>
+</html>
